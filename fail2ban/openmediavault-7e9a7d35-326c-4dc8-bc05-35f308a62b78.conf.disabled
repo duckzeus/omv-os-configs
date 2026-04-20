@@ -1,0 +1,7 @@
+[owncloud]
+enabled = no
+port = http,https,8443
+filter = owncloud
+logpath = /MyPath/owncloud.log
+bantime = -1
+maxretry = 3

@@ -1,0 +1,2717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <!-- Configuration version -->
+  <version>0.1</version>
+  <!-- System configuration - Do not add any configuration here -->
+  <system>
+    <apt>
+      <distribution>
+        <!--
+				<proposed>0|1</proposed>
+				<partner>0|1</partner>
+				-->
+        <proposed>0</proposed>
+        <partner>0</partner>
+      </distribution>
+      <updates>
+        <unattendedupgrade>1</unattendedupgrade>
+      </updates>
+      <sources>
+        <item>
+          <uuid>25443d7b-f5d9-456b-9482-439713715c81</uuid>
+          <enable>0</enable>
+          <types>deb</types>
+          <uris>https://deb.debian.org/debian</uris>
+          <suites>stable-backports</suites>
+          <components>main contrib non-free non-free-firmware</components>
+          <signedby>-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+NlB2T6bKGcYGqL7L
+=UUyy
+-----END PGP PUBLIC KEY BLOCK-----</signedby>
+          <comment>Bookworm, Backports</comment>
+        </item>
+      </sources>
+    </apt>
+    <powermanagement>
+      <!--
+			<cpufreq>0|1</cpufreq>
+			<powerbtn>nothing|shutdown|standby</powerbtn>
+			<standbymode>poweroff|suspend|hibernate|suspendhybrid</standbymode>
+			-->
+      <cpufreq>1</cpufreq>
+      <powerbtn>nothing</powerbtn>
+      <standbymode>poweroff</standbymode>
+    </powermanagement>
+    <monitoring>
+      <perfstats>
+        <!--
+				<enable>0|1</enable>
+				-->
+        <enable>1</enable>
+      </perfstats>
+    </monitoring>
+    <time>
+      <timezone>America/New_York</timezone>
+      <ntp>
+        <enable>1</enable>
+        <timeservers>pool.ntp.org</timeservers>
+        <clients></clients>
+      </ntp>
+    </time>
+    <email>
+      <enable>1</enable>
+      <server>mail.heyzeus.org</server>
+      <port>465</port>
+      <tls>auto</tls>
+      <sender>omv-server@heyzeus.org</sender>
+      <authentication>
+        <enable>1</enable>
+        <username>omv-server@heyzeus.org</username>
+        <password>OMVDollars2#</password>
+      </authentication>
+      <primaryemail>zeusis@gmail.com</primaryemail>
+      <secondaryemail></secondaryemail>
+    </email>
+    <notification>
+      <notifications>
+        <!--
+				<notification>
+					<uuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</uuid>
+					<id>xxx</id>
+					<enable>0|1</enable>
+				</notification>
+				-->
+        <notification>
+          <uuid>c1cd54af-660d-4311-8e21-2a19420355bb</uuid>
+          <id>monitprocevents</id>
+          <enable>0</enable>
+        </notification>
+        <notification>
+          <uuid>8deb96bd-10d6-4eb8-9e3d-0938f2bcbb30</uuid>
+          <id>monitloadavg</id>
+          <enable>0</enable>
+        </notification>
+        <notification>
+          <uuid>03dc067d-1310-45b5-899f-b471a0ae9233</uuid>
+          <id>monitmemoryusage</id>
+          <enable>0</enable>
+        </notification>
+        <notification>
+          <uuid>fbf7973e-57a6-4c4a-8b7d-353653b596a5</uuid>
+          <id>monitcpuusage</id>
+          <enable>0</enable>
+        </notification>
+        <notification>
+          <uuid>d1ce47d1-d8d5-4f43-9f5c-36a30d818734</uuid>
+          <id>monitfilesystems</id>
+          <enable>0</enable>
+        </notification>
+        <notification>
+          <uuid>bd784490-a15c-47a9-9930-9f5897804654</uuid>
+          <id>smartmontools</id>
+          <enable>0</enable>
+        </notification>
+        <notification>
+          <uuid>5334afb5-b66d-4719-a3ce-6a6a2d574816</uuid>
+          <id>apt</id>
+          <enable>0</enable>
+        </notification>
+        <notification>
+          <uuid>d7d2bc59-a2e7-4e24-80d8-a30360b53e1f</uuid>
+          <id>nut</id>
+          <enable>0</enable>
+        </notification>
+        <notification>
+          <uuid>ce287478-5429-46c7-9e06-438a2aba8499</uuid>
+          <id>authentication</id>
+          <enable>0</enable>
+        </notification>
+        <notification>
+          <uuid>6a0ca6b0-81a5-11f0-a77e-e72b7329fa76</uuid>
+          <id>misc</id>
+          <enable>0</enable>
+        </notification>
+        <notification>
+          <uuid>77824445-fbef-43b2-b912-46ffdfdd877a</uuid>
+          <id>monitk8s</id>
+          <enable>1</enable>
+        </notification>
+      </notifications>
+    </notification>
+    <certificates>
+      <!--
+			<sslcertificate>
+				<uuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</uuid>
+				<certificate>xxx</certificate>
+				<privatekey>xxx</privatekey>
+				<comment>xxx</comment>
+			</sslcertificate>
+			<sshcertificate>
+				<uuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</uuid>
+				<publickey>xxx</publickey>
+				<privatekey>xxx</privatekey>
+				<comment>xxx</comment>
+			</sshcertificate>
+			-->
+    </certificates>
+    <network>
+      <dns>
+        <hostname>omv-server</hostname>
+        <domainname>lan</domainname>
+      </dns>
+      <interfaces>
+        <!--
+				<interface>
+					<uuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</uuid>
+					<type>ethernet|bond|vlan|wifi|bridge</type>
+					<devicename>xxx</devicename>
+					<method>dhcp|static|manual</method>
+					<address>xxx.xxx.xxx.xxx</address>
+					<netmask>xxx.xxx.xxx.xxx</netmask>
+					<gateway>xxx.xxx.xxx.xxx</gateway>
+					<routemetric>0-65535</routemetric>
+					<method6>auto|dhcp|static|manual</method6>
+					<address6>xxxx:xxxx:...:xxxx</address6>
+					<netmask6>0-128</netmask6>
+					<gateway6>xxxx:xxxx:...:xxxx</gateway6>
+					<routemetric6>0-65535</routemetric6>
+					<dnsnameservers>xxx yyy zzz</dnsnameservers>
+					<dnssearch></dnssearch>
+					<mtu>0...n</mtu>
+					<wol>0|1</wol>
+					<comment>xxx</comment>
+					# Optional arguments by type:
+					# - ethernet | wifi | vlan
+					<altmacaddress>|xx:xx:xx:xx:xx:xx</altmacaddress>
+					# - bond
+					<slaves>(((eth|venet|wlan)\d+|(en|veth|wl)\S+),)*((eth|venet|wlan)\d+|(en|veth|wl)\S+)</slaves>
+					<bondprimary>(eth|wlan)\d+</bondprimary>
+					<bondmode>0|1|2|3|4|5|6</bondmode>
+					<bondmiimon>0</bondmiimon>
+					<bonddowndelay>0</bonddowndelay>
+					<bondupdelay>0</bondupdelay>
+					<bondupdelay>0</bondupdelay>
+					<bondtransmithashpolicy>layer2|layer2+3|layer3+4|encap2+3|encap3+4</bondtransmithashpolicy>
+					# - vlan
+					<vlanid>1-4095</vlanid>
+					<vlanrawdevice>xxx</vlanrawdevice>
+					# - wifi
+					<wpassid>xxx</wpassid>
+					<wpapsk>xxx</wpapsk>
+					<hidden>0|1</hidden>
+					# - bridge
+					<slaves>(((eth|venet|wlan)\d+|(en|veth|wl)\S+),)*((eth|venet|wlan)\d+|(en|veth|wl)\S+)</slaves>
+				</interface>
+				-->
+        <interface>
+          <uuid>60cb75c8-133d-4002-b541-047da0696d6c</uuid>
+          <type>ethernet</type>
+          <devicename>enp2s0</devicename>
+          <method>static</method>
+          <address>192.168.1.154</address>
+          <netmask>255.255.255.0</netmask>
+          <gateway>192.168.1.1</gateway>
+          <routemetric>0</routemetric>
+          <method6>manual</method6>
+          <address6></address6>
+          <netmask6>64</netmask6>
+          <gateway6></gateway6>
+          <routemetric6>1</routemetric6>
+          <dnsnameservers>1.1.1.1</dnsnameservers>
+          <dnssearch></dnssearch>
+          <mtu>0</mtu>
+          <wol>0</wol>
+          <comment></comment>
+          <altmacaddress></altmacaddress>
+          <slaves></slaves>
+          <bondprimary></bondprimary>
+          <bondmode>1</bondmode>
+          <bondmiimon>0</bondmiimon>
+          <bonddowndelay>0</bonddowndelay>
+          <bondupdelay>0</bondupdelay>
+          <bondtransmithashpolicy>layer2</bondtransmithashpolicy>
+          <vlanid>1</vlanid>
+          <vlanrawdevice></vlanrawdevice>
+          <band>auto</band>
+          <wpassid></wpassid>
+          <wpapsk></wpapsk>
+          <keymanagement>psk</keymanagement>
+          <hidden>0</hidden>
+        </interface>
+      </interfaces>
+      <iptables>
+        <!--
+				<rule>
+					<uuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</uuid>
+					<family>inet|inet6</family>
+					<rulenum>1...x</rulenum>
+					<chain>INPUT|OUTPUT</chain>
+					<action>ACCEPT|REJECT|DROP|LOG|</action>
+					<source>[!]?xxx.xxx.xxx.xxx|[!]?xxx.xxx.xxx.xxx/xx|xxx.xxx.xxx.xxx-yyy.yyy.yyy.yyy</source>
+					<sport>xxx|xxx-yyy</sport>
+					<destination>[!]?xxx.xxx.xxx.xxx|[!]?xxx.xxx.xxx.xxx/xx|xxx.xxx.xxx.xxx-yyy.yyy.yyy.yyy</destination>
+					<dport>xxx|xxx-yyy</dport>
+					<protocol>[!]?(tcp|udp|icmp|icmpv6)|all</protocol>
+					<extraoptions>xxx</extraoptions>
+					<comment>xxx</comment>
+				</rule>
+				-->
+      </iptables>
+      <proxy>
+        <http>
+          <enable>0</enable>
+          <host></host>
+          <port>8080</port>
+          <username></username>
+          <password></password>
+        </http>
+        <https>
+          <enable>0</enable>
+          <host></host>
+          <port>4443</port>
+          <username></username>
+          <password></password>
+        </https>
+        <ftp>
+          <enable>0</enable>
+          <host></host>
+          <port>2121</port>
+          <username></username>
+          <password></password>
+        </ftp>
+      </proxy>
+      <hosts>
+        <extraoptions># IP_address canonical_hostname [aliases...]</extraoptions>
+      </hosts>
+    </network>
+    <usermanagement>
+      <homedirectory>
+        <enable>1</enable>
+        <sharedfolderref>62da1408-2b29-4e0e-a3dc-1e4ed436eb01</sharedfolderref>
+      </homedirectory>
+      <users>
+        <!--
+				<user>
+					<uuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</uuid>
+					<name>xxx</name>
+					<email>xxx</email>
+					<disallowusermod>0</disallowusermod>
+					<sshpubkeys>
+						<sshpubkey>|xxx</sshpubkey>
+					</sshpubkeys>
+				</user>
+				-->
+        <user>
+          <uuid>bf9d4007-a9a4-4209-b690-955b00c7794b</uuid>
+          <name>appuser</name>
+          <email></email>
+          <disallowusermod>1</disallowusermod>
+          <sshpubkeys></sshpubkeys>
+        </user>
+        <user>
+          <uuid>ad6a2e72-427f-4d74-8506-9b2d0b75e0c8</uuid>
+          <name>xadmin</name>
+          <email></email>
+          <disallowusermod>0</disallowusermod>
+          <sshpubkeys></sshpubkeys>
+        </user>
+        <user>
+          <uuid>40c2e949-4875-4758-98f2-1c8f16bf9703</uuid>
+          <name>zeus</name>
+          <email></email>
+          <disallowusermod>0</disallowusermod>
+          <sshpubkeys></sshpubkeys>
+        </user>
+      </users>
+      <groups>
+        <!--
+				<group>
+					<uuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</uuid>
+					<name>xxx</name>
+					<comment>xxx</comment>
+				</group>
+				-->
+        <group>
+          <uuid>4d9798be-cf06-4060-9550-1f50218e218c</uuid>
+          <name>appdata</name>
+          <comment></comment>
+        </group>
+      </groups>
+    </usermanagement>
+    <crontab>
+      <!--
+			<job>
+				<uuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</uuid>
+				<enable>0|1</enable>
+				<execution>exactly|hourly|daily|weekly|monthly|yearly|reboot</execution>
+				<sendemail>0|1<sendemail>
+				<type>reboot|shutdown|standby|userdefined</type>
+				<comment>xxx</comment>
+				<minute>[00-59|*]</minute>
+				<everynminute>0|1</everynminute>
+				<hour>[00-23|*]</hour>
+				<everynhour>0|1</everynhour>
+				<dayofmonth>[01-31|*]</dayofmonth>
+				<everyndayofmonth>0|1</everyndayofmonth>
+				<month>[01-12|*]</month>
+				<dayofweek>[1-7|*]</dayofweek>
+				<username>xxx</username>
+				<command>xxx</command>
+			</job>
+			-->
+      <job>
+        <uuid>32664b22-5a9d-11ec-8834-6f00f75b23ee</uuid>
+        <enable>1</enable>
+        <execution>daily</execution>
+        <sendemail>0</sendemail>
+        <comment></comment>
+        <type>userdefined</type>
+        <minute>30</minute>
+        <everynminute>0</everynminute>
+        <hour>1</hour>
+        <everynhour>0</everynhour>
+        <month>*</month>
+        <dayofmonth>*</dayofmonth>
+        <everyndayofmonth>0</everyndayofmonth>
+        <dayofweek>7</dayofweek>
+        <username>root</username>
+        <command>/usr/sbin/omv-backup</command>
+      </job>
+    </crontab>
+    <syslog>
+      <remote>
+        <!--
+				<protocol>udp|tcp</protocol>
+				-->
+        <enable>0</enable>
+        <host></host>
+        <port>514</port>
+        <protocol>udp</protocol>
+      </remote>
+    </syslog>
+    <storage>
+      <!--
+			<hdparm>
+				<uuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</uuid>
+				<devicefile>/dev/xxx</devicefile>
+				<apm>0 = disable|1-255<apm>
+				<aam>0|128|254</aam>
+				<spindowntime>0 = disabled|1-254</spindowntime>
+				<writecache>0|1</writecache>
+			</hdparm>
+			-->
+      <filesystem>
+        <!--
+				<quota>
+					<uuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</uuid>
+					<fsuuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx|xxxx-xxxx</fsuuid>
+					<usrquota>
+						<name>xxx</name>
+						<bsoftlimit>0</bsoftlimit>
+						<bhardlimit>xxx</bhardlimit>
+						<isoftlimit>0</isoftlimit>
+						<ihardlimit>0</ihardlimit>
+					</usrquota>
+					<usrquota>
+						...
+					</usrquota>
+					<grpquota>
+						<name>xxx</name>
+						<bsoftlimit>0</bsoftlimit>
+						<bhardlimit>xxx</bhardlimit>
+						<isoftlimit>0</isoftlimit>
+						<ihardlimit>0</ihardlimit>
+					</grpquota>
+					<grpquota>
+						...
+					</grpquota>
+				</quota>
+				<quota>
+					...
+				</quota>
+				-->
+      </filesystem>
+    </storage>
+    <fstab>
+      <!--
+			<mntent>
+				<uuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</uuid>
+				<fsname>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx|xxxx-xxxx|/dev/xxx</fsname>
+				<dir>/xxx/yyy/zzz</dir>
+				<type>none|ext2|ext3|ext4|xfs|jfs|iso9660|udf|...</type>
+				<opts></opts>
+				<freq>0</freq>
+				<passno>0|1|2</passno>
+				<hidden>0|1</hidden>
+				<usagewarnthreshold>xxx</usagewarnthreshold>
+				<comment>xxx</comment>
+			</mntent>
+			-->
+      <mntent>
+        <uuid>79684322-3eac-11ea-a974-63a080abab18</uuid>
+        <fsname>/dev/disk/by-uuid/bd15efe1-1865-433f-b5c8-4f561a3a38fc</fsname>
+        <dir>/</dir>
+        <type>ext4</type>
+        <opts>errors=remount-ro</opts>
+        <freq>0</freq>
+        <passno>1</passno>
+        <hidden>1</hidden>
+      </mntent>
+      <mntent>
+        <uuid>5a748a84-3020-47cb-a81e-543c7c413655</uuid>
+        <fsname>/dev/disk/by-uuid/60f74361-aa6c-4a40-9ebf-f77d344204d3</fsname>
+        <dir>/srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3</dir>
+        <type>ext4</type>
+        <opts>defaults,nofail,user_xattr,usrquota,grpquota,acl</opts>
+        <freq>0</freq>
+        <passno>2</passno>
+        <hidden>0</hidden>
+        <usagewarnthreshold>85</usagewarnthreshold>
+        <comment></comment>
+      </mntent>
+    </fstab>
+    <shares>
+      <!--
+			<sharedfolder>
+				<uuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</uuid>
+				<name>xxx</name>
+				<comment>xxx</comment>
+				<mntentref>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</mntentref>
+				<reldirpath>xxx</reldirpath>
+				<privileges>
+					<privilege>
+						<type>user|group</type>
+						<name>xxx</name>
+						<perms>0 = no permission|5 = read and execute|7 = read, write and execute</perms>
+					</privilege>
+				</privileges>
+			</sharedfolder>
+			-->
+      <sharedfolder>
+        <uuid>ef017283-9d50-4776-a519-b9355e132f89</uuid>
+        <name>appdata</name>
+        <comment></comment>
+        <mntentref>5a748a84-3020-47cb-a81e-543c7c413655</mntentref>
+        <reldirpath>appdata/</reldirpath>
+        <privileges>
+          <privilege>
+            <type>user</type>
+            <name>appuser</name>
+            <perms>7</perms>
+          </privilege>
+        </privileges>
+      </sharedfolder>
+      <sharedfolder>
+        <uuid>550c9755-4397-41d0-8fab-facf5d86569a</uuid>
+        <name>backup_compose</name>
+        <comment></comment>
+        <mntentref>5a748a84-3020-47cb-a81e-543c7c413655</mntentref>
+        <reldirpath>backup_compose/</reldirpath>
+        <privileges>
+          <privilege>
+            <type>user</type>
+            <name>appuser</name>
+            <perms>7</perms>
+          </privilege>
+        </privileges>
+      </sharedfolder>
+      <sharedfolder>
+        <uuid>23757efe-2d4d-4040-bc58-d8b7aa8d6b6e</uuid>
+        <name>docker</name>
+        <comment></comment>
+        <mntentref>5a748a84-3020-47cb-a81e-543c7c413655</mntentref>
+        <reldirpath>docker/</reldirpath>
+        <privileges>
+          <privilege>
+            <type>user</type>
+            <name>appuser</name>
+            <perms>7</perms>
+          </privilege>
+        </privileges>
+      </sharedfolder>
+      <sharedfolder>
+        <uuid>1964502e-fb81-47fc-9bf9-a02e99103542</uuid>
+        <name>media</name>
+        <comment></comment>
+        <mntentref>5a748a84-3020-47cb-a81e-543c7c413655</mntentref>
+        <reldirpath>media/</reldirpath>
+        <privileges>
+          <privilege>
+            <type>user</type>
+            <name>appuser</name>
+            <perms>7</perms>
+          </privilege>
+          <privilege>
+            <type>user</type>
+            <name>zeus</name>
+            <perms>7</perms>
+          </privilege>
+        </privileges>
+      </sharedfolder>
+      <sharedfolder>
+        <uuid>56447838-c9f1-4fb3-b5eb-316aba9921bf</uuid>
+        <name>data</name>
+        <comment></comment>
+        <mntentref>5a748a84-3020-47cb-a81e-543c7c413655</mntentref>
+        <reldirpath>data/</reldirpath>
+        <privileges>
+          <privilege>
+            <type>user</type>
+            <name>appuser</name>
+            <perms>7</perms>
+          </privilege>
+        </privileges>
+      </sharedfolder>
+      <sharedfolder>
+        <uuid>f92ecfce-4faf-4a5c-b2e8-13cb8987d152</uuid>
+        <name>documents</name>
+        <comment></comment>
+        <mntentref>5a748a84-3020-47cb-a81e-543c7c413655</mntentref>
+        <reldirpath>documents/</reldirpath>
+        <privileges>
+          <privilege>
+            <type>user</type>
+            <name>appuser</name>
+            <perms>7</perms>
+          </privilege>
+        </privileges>
+      </sharedfolder>
+      <sharedfolder>
+        <uuid>0a42dd0a-2663-4936-8ded-f9b89602d88d</uuid>
+        <name>downloads</name>
+        <comment></comment>
+        <mntentref>5a748a84-3020-47cb-a81e-543c7c413655</mntentref>
+        <reldirpath>downloads/</reldirpath>
+        <privileges>
+          <privilege>
+            <type>user</type>
+            <name>appuser</name>
+            <perms>7</perms>
+          </privilege>
+          <privilege>
+            <type>user</type>
+            <name>zeus</name>
+            <perms>7</perms>
+          </privilege>
+        </privileges>
+      </sharedfolder>
+      <sharedfolder>
+        <uuid>a5304be9-b5ae-4163-953e-54f0486c1926</uuid>
+        <name>database</name>
+        <comment></comment>
+        <mntentref>5a748a84-3020-47cb-a81e-543c7c413655</mntentref>
+        <reldirpath>database/</reldirpath>
+        <privileges>
+          <privilege>
+            <type>user</type>
+            <name>appuser</name>
+            <perms>7</perms>
+          </privilege>
+        </privileges>
+      </sharedfolder>
+      <sharedfolder>
+        <uuid>15037bf4-a701-404a-b739-5140b72252be</uuid>
+        <name>compose</name>
+        <comment></comment>
+        <mntentref>5a748a84-3020-47cb-a81e-543c7c413655</mntentref>
+        <reldirpath>compose/</reldirpath>
+        <privileges>
+          <privilege>
+            <type>user</type>
+            <name>appuser</name>
+            <perms>7</perms>
+          </privilege>
+        </privileges>
+      </sharedfolder>
+      <sharedfolder>
+        <uuid>cb50a8cf-6f5a-4ee4-9128-461469360b4c</uuid>
+        <name>volumes</name>
+        <comment></comment>
+        <mntentref>5a748a84-3020-47cb-a81e-543c7c413655</mntentref>
+        <reldirpath>volumes/</reldirpath>
+        <privileges></privileges>
+      </sharedfolder>
+      <sharedfolder>
+        <uuid>cbb86b07-b4be-40ab-9dd2-247a017998ce</uuid>
+        <name>iso</name>
+        <comment></comment>
+        <mntentref>5a748a84-3020-47cb-a81e-543c7c413655</mntentref>
+        <reldirpath>iso/</reldirpath>
+        <privileges></privileges>
+      </sharedfolder>
+      <sharedfolder>
+        <uuid>62da1408-2b29-4e0e-a3dc-1e4ed436eb01</uuid>
+        <name>OMV</name>
+        <comment></comment>
+        <mntentref>79684322-3eac-11ea-a974-63a080abab18</mntentref>
+        <reldirpath>/</reldirpath>
+        <privileges></privileges>
+      </sharedfolder>
+      <sharedfolder>
+        <uuid>d57773ca-5c70-46db-9a4e-373b1afd0d30</uuid>
+        <name>TopLevel</name>
+        <comment></comment>
+        <mntentref>5a748a84-3020-47cb-a81e-543c7c413655</mntentref>
+        <reldirpath>/</reldirpath>
+        <privileges></privileges>
+      </sharedfolder>
+      <sharedfolder>
+        <uuid>643c4e26-f3b5-4c40-8b9e-a1af42473a1c</uuid>
+        <name>quarantine</name>
+        <comment></comment>
+        <mntentref>5a748a84-3020-47cb-a81e-543c7c413655</mntentref>
+        <reldirpath>quarantine/</reldirpath>
+        <privileges></privileges>
+      </sharedfolder>
+    </shares>
+    <sharedfoldersnapshotlifecycle>
+      <enable>1</enable>
+      <retentionperiod>1800</retentionperiod>
+      <limitcustom>10</limitcustom>
+      <limithourly>24</limithourly>
+      <limitdaily>7</limitdaily>
+      <limitweekly>4</limitweekly>
+      <limitmonthly>12</limitmonthly>
+      <limityearly>1</limityearly>
+    </sharedfoldersnapshotlifecycle>
+    <backup>
+      <sharedfolderref>550c9755-4397-41d0-8fab-facf5d86569a</sharedfolderref>
+      <method>fsarchiver</method>
+      <root></root>
+      <extraoptions></extraoptions>
+      <keep>7</keep>
+      <passwd>SaveSomeDollars2#</passwd>
+      <verbose>0</verbose>
+    </backup>
+    <omvextras>
+      <docker>1</docker>
+    </omvextras>
+  </system>
+  <!-- Web control panel configuration - Do not add any configuration here -->
+  <webadmin>
+    <port>8085</port>
+    <enablessl>0</enablessl>
+    <sslport>443</sslport>
+    <forcesslonly>0</forcesslonly>
+    <sslcertificateref></sslcertificateref>
+    <timeout>60</timeout>
+  </webadmin>
+  <!-- Plugin configuration area -->
+  <services>
+    <ssh>
+      <enable>1</enable>
+      <port>22</port>
+      <passwordauthentication>1</passwordauthentication>
+      <pubkeyauthentication>0</pubkeyauthentication>
+      <permitrootlogin>0</permitrootlogin>
+      <tcpforwarding>1</tcpforwarding>
+      <compression>0</compression>
+      <extraoptions>Match Address 192.168.0.0/24
+    PermitRootLogin yes
+Match Address 100.64.0.0/10
+    PermitRootLogin yes
+    PubkeyAuthentication yes
+</extraoptions>
+    </ssh>
+    <nfs>
+      <enable>0</enable>
+      <versions>3,4,4.1,4.2</versions>
+      <shares>
+        <!--
+				<share>
+					<uuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</uuid>
+					<sharedfolderref>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</sharedfolderref>
+					<mntentref>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</mntentref>
+					<client>xxx.xxx.xxx.xxx/xx|xxxxxxxxx</client>
+					<options>xxx,xxx,xxx</options>
+					<extraoptions></extraoptions>
+					<comment>xxx</comment>
+				</share>
+				-->
+      </shares>
+    </nfs>
+    <smart>
+      <!--
+			<powermode>never|sleep|standby|idle</powermode>
+			-->
+      <enable>0</enable>
+      <interval>1800</interval>
+      <powermode>never</powermode>
+      <tempdiff>0</tempdiff>
+      <tempmax>0</tempmax>
+      <monitor>
+        <!--
+				<device>
+					<uuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</uuid>
+					<enable>0|1</enable>
+					<devicefile>/dev/xxx</devicefile>
+					<devicetype>|sat|cciss|xxx</devicetype>
+					<tempdiff>0</tempdiff>
+					<tempmax>0</tempmax>
+				</device>
+				-->
+      </monitor>
+      <scheduledtests>
+        <!--
+				<job>
+					<uuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</uuid>
+					<enable>0|1</enable>
+					<devicefile>/dev/xxx</devicefile>
+					<devicetype>|sat|cciss|xxx</devicetype>
+					<type>S|L|C|O</type>
+					<month>[01-12|*]</month>
+					<dayofmonth>[01-31|*]</dayofmonth>
+					<dayofweek>[1-7|*]</dayofweek>
+					<hour>[00-23|*]</hour>
+					<comment>xxx</comment>
+				</job>
+				-->
+      </scheduledtests>
+    </smart>
+    <smb>
+      <enable>1</enable>
+      <workgroup>WORKGROUP</workgroup>
+      <serverstring>%h server</serverstring>
+      <loglevel>0</loglevel>
+      <usesendfile>1</usesendfile>
+      <aio>1</aio>
+      <timeserver>0</timeserver>
+      <winssupport>0</winssupport>
+      <winsserver></winsserver>
+      <homesenable>0</homesenable>
+      <homesbrowseable>1</homesbrowseable>
+      <homesrecyclebin>0</homesrecyclebin>
+      <homesinheritacls>0</homesinheritacls>
+      <homesinheritpermissions>0</homesinheritpermissions>
+      <homesextraoptions></homesextraoptions>
+      <netbios>0</netbios>
+      <minprotocol>SMB2</minprotocol>
+      <extraoptions></extraoptions>
+      <shares>
+        <share>
+          <uuid>5150be59-7d07-4ea2-af37-25aed01419f8</uuid>
+          <enable>1</enable>
+          <sharedfolderref>1964502e-fb81-47fc-9bf9-a02e99103542</sharedfolderref>
+          <comment></comment>
+          <guest>no</guest>
+          <readonly>0</readonly>
+          <browseable>1</browseable>
+          <recyclebin>0</recyclebin>
+          <recyclemaxsize>0</recyclemaxsize>
+          <recyclemaxage>0</recyclemaxage>
+          <hidedotfiles>1</hidedotfiles>
+          <inheritacls>1</inheritacls>
+          <inheritpermissions>1</inheritpermissions>
+          <easupport>0</easupport>
+          <storedosattributes>0</storedosattributes>
+          <hostsallow></hostsallow>
+          <hostsdeny></hostsdeny>
+          <audit>0</audit>
+          <timemachine>0</timemachine>
+          <transportencryption>0</transportencryption>
+          <extraoptions></extraoptions>
+          <followsymlinks>1</followsymlinks>
+          <widelinks>0</widelinks>
+        </share>
+        <share>
+          <uuid>acc76337-ed33-46b7-b841-2b83578dbf87</uuid>
+          <enable>1</enable>
+          <sharedfolderref>0a42dd0a-2663-4936-8ded-f9b89602d88d</sharedfolderref>
+          <comment>downloads</comment>
+          <guest>no</guest>
+          <readonly>0</readonly>
+          <browseable>1</browseable>
+          <recyclebin>0</recyclebin>
+          <recyclemaxsize>0</recyclemaxsize>
+          <recyclemaxage>0</recyclemaxage>
+          <hidedotfiles>1</hidedotfiles>
+          <inheritacls>0</inheritacls>
+          <inheritpermissions>0</inheritpermissions>
+          <easupport>0</easupport>
+          <storedosattributes>0</storedosattributes>
+          <hostsallow></hostsallow>
+          <hostsdeny></hostsdeny>
+          <audit>0</audit>
+          <timemachine>0</timemachine>
+          <transportencryption>0</transportencryption>
+          <extraoptions></extraoptions>
+          <followsymlinks>1</followsymlinks>
+          <widelinks>0</widelinks>
+        </share>
+      </shares>
+      <homesfollowsymlinks>1</homesfollowsymlinks>
+      <homeswidelinks>0</homeswidelinks>
+    </smb>
+    <rsync>
+      <server>
+        <enable>1</enable>
+        <port>873</port>
+        <extraoptions></extraoptions>
+        <modules>
+          <module>
+            <uuid>6f7bf639-be3d-4745-b30a-39edede7d70f</uuid>
+            <enable>1</enable>
+            <sharedfolderref>550c9755-4397-41d0-8fab-facf5d86569a</sharedfolderref>
+            <uid>zeus</uid>
+            <gid>users</gid>
+            <name>omv_backups</name>
+            <comment></comment>
+            <readonly>0</readonly>
+            <writeonly>0</writeonly>
+            <maxconnections>0</maxconnections>
+            <list>1</list>
+            <hostsallow></hostsallow>
+            <hostsdeny></hostsdeny>
+            <extraoptions></extraoptions>
+            <authusers>0</authusers>
+            <usechroot>1</usechroot>
+            <users></users>
+          </module>
+        </modules>
+      </server>
+      <jobs>
+        <!--
+				<job>
+					<uuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</uuid>
+					<enable>0|1</enable>
+					<sendemail>0|1<sendemail>
+					<quiet>0</quiet>
+					<comment>xxx</comment>
+					<type>local|remote</type>
+					<src>
+						<sharedfolderref>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</sharedfolderref>
+						<uri>xxx</uri>
+					</src>
+					<dest>
+						<sharedfolderref>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</sharedfolderref>
+						<uri>xxx</uri>
+					</dest>
+					<minute>[00-59|*]</minute>
+					<everynminute>0|1</everynminute>
+					<hour>[00-23|*]</hour>
+					<everynhour>0|1</everynhour>
+					<dayofmonth>[01-31|*]</dayofmonth>
+					<everyndayofmonth>0|1</everyndayofmonth>
+					<month>[01-12|*]</month>
+					<dayofweek>[1-7|*]</dayofweek>
+					<optionrecursive>1</optionrecursive>
+					<optiontimes>1</optiontimes>
+					<optiongroup>1</optiongroup>
+					<optionowner>1</optionowner>
+					<optioncompress>0</optioncompress>
+					<optionarchive>1</optionarchive>
+					<optiondelete>0</optiondelete>
+					<optionperms>1</optionperms>
+					<optionacls>1</optionacls>
+					<optionxattrs>0</optionxattrs>
+					<optiondryrun>0</optiondryrun>
+					<optionpartial>0</optionpartial>
+					<extraoptions></extraoptions>
+					// remote
+					<mode>push|pull</mode>
+					<authentication>password|pubkey</authentication>
+					<password>xxx</password>
+					<sshcertificateref>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</sshcertificateref>
+					<sshport>22</sshport>
+				</job>
+				-->
+      </jobs>
+    </rsync>
+    <compose>
+      <sharedfolderref>15037bf4-a701-404a-b739-5140b72252be</sharedfolderref>
+      <composeowner>root</composeowner>
+      <composegroup>users</composegroup>
+      <mode>770</mode>
+      <fileperms>660</fileperms>
+      <datasharedfolderref>1964502e-fb81-47fc-9bf9-a02e99103542</datasharedfolderref>
+      <backupsharedfolderref>550c9755-4397-41d0-8fab-facf5d86569a</backupsharedfolderref>
+      <backupmaxsize>2</backupmaxsize>
+      <dockerStorage>/var/lib/docker</dockerStorage>
+      <urlHostname></urlHostname>
+      <cachetimefiles>60</cachetimefiles>
+      <cachetimeservices>60</cachetimeservices>
+      <cachetimestats>60</cachetimestats>
+      <cachetimeimages>60</cachetimeimages>
+      <cachetimenetworks>60</cachetimenetworks>
+      <cachetimevolumes>60</cachetimevolumes>
+      <cachetimecontainers>60</cachetimecontainers>
+      <showcmd>0</showcmd>
+      <files>
+        <file>
+          <uuid>1c2ca4af-b4a9-4db2-9d52-5abec1cfd81d</uuid>
+          <name>Plex Server</name>
+          <description>Plex Server</description>
+          <body>---
+services:
+  plex:
+    image: lscr.io/linuxserver/plex:latest
+    container_name: plex
+    network_mode: bridge
+    environment:
+      - PUID=1000
+      - PGID=100
+      - VERSION=latest
+      - TZ=America/New_York
+    volumes:
+      - /dev/shm:/transcode
+      - /etc/localtime:/etc/localtime:ro
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/database/plex/database:/config
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/media/plex/multimedia:/multimedia
+    dns:
+      - 192.168.1.154
+    ports:
+      - 32400:32400
+    restart: unless-stopped
+</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>39153057-710c-45c7-9384-82826ad6827e</uuid>
+          <name>sabNZBd</name>
+          <description>sabNZBd</description>
+          <body>services:
+  sabnzbd:
+    image: lscr.io/linuxserver/sabnzbd:latest
+    container_name: sabnzbd
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=America/New_York
+    dns:
+      - 192.168.1.154
+    networks:
+      - media-net
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/sabnzbd/config:/config
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/downloads:/GeneralDownloads
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/sabnzbd/config/Downloads/complete:/downloads #optional
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/sabnzbd/config/Downloads/incomplete:/incomplete-download #optional
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/media/plex/multimedia/movies:/Plexmovies #optional
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/media/plex/multimedia/tvshows:/Plextvshows #optional
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/media/lazylibrarian/books:/books #optional
+    ports:
+      - 8084:8084
+    restart: unless-stopped
+networks:
+  media-net:
+    external: true</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>88ccc263-c31c-40ff-8f8f-59e5a6101aad</uuid>
+          <name>Sonarr</name>
+          <description>Sonarr</description>
+          <body>---
+services:
+  sonarr:
+    image: lscr.io/linuxserver/sonarr:amd64-latest
+    container_name: sonarr
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=America/New_York
+    dns:
+      - 192.168.1.154    
+    networks:
+      - media-net
+    volumes:
+      - /etc/hosts:/etc/hosts:ro
+      - /etc/localtime:/etc/localtime:ro
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/sonarr/config:/config
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/downloads:/GeneralDownloads
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/media/plex/multimedia/tvshows:/Plextvshows #optional
+    ports:
+      - 8989:8989
+    restart: unless-stopped
+networks:
+  media-net:
+    external: true
+</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>eb447f5a-6a07-4483-b35f-80099a27a9cd</uuid>
+          <name>Home Assistant</name>
+          <description>Home Assistant</description>
+          <body>---
+# https://hub.docker.com/r/linuxserver/homeassistant
+services:
+  homeassistant:
+    image: lscr.io/linuxserver/homeassistant:latest
+    container_name: homeassistant
+    network_mode: host
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=America/New_York
+    devices:
+      #- /dev/serial/by-id/usb-Itead_Sonoff_Zigbee_3.0_USB_Dongle_Plus_V2_04f89308bc4bef118f7ec2a079f42d1b-if00-port0:/dev/ttyUSB2 This is old Sonoff USB Dongle
+      - /dev/serial/by-id/usb-Silicon_Labs_CP2105_Dual_USB_to_UART_Bridge_Controller_01702DFE-if00-port0:/dev/ttyUSB0
+      - /dev/serial/by-id/usb-Silicon_Labs_CP2105_Dual_USB_to_UART_Bridge_Controller_01702DFE-if01-port0:/dev/ttyUSB1
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/homeassistant:/config
+      - /run/dbus:/run/dbus:ro
+    dns:
+      - 8.8.8.8
+    ports:
+      - 8123:8123
+    privileged: true
+    restart: unless-stopped</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>fa379eb3-0a56-48b1-941c-139e46d265d2</uuid>
+          <name>Radarr</name>
+          <description>Radarr</description>
+          <body>---
+services:
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    container_name: radarr
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=America/New_York
+    networks: 
+      - media-net
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/radarr/config:/config
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/downloads:/GeneralDownloads
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/media/plex/multimedia/movies:/Plexmovies #
+    dns:
+      - 192.168.1.154
+    ports:
+      - 7878:7878
+    restart: unless-stopped
+networks:
+  media-net:
+    external: true</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>456505b6-c096-4a1e-8672-43febc35b7d5</uuid>
+          <name>Lidarr</name>
+          <description>Lidarr</description>
+          <body>---
+# https://hub.docker.com/r/linuxserver/lidarr
+services:
+  lidarr:
+    image: lscr.io/linuxserver/lidarr:latest
+    container_name: lidarr
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=America/New_York
+    networks:
+      - media-net
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/lidarr/config:/config
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/downloads:/GeneralDownloads 
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/media/plex/multimedia/music:/Plexmusic #optional
+    dns:
+      - 192.168.1.154
+    ports:
+      - 8686:8686
+    restart: unless-stopped
+networks:
+  media-net:
+    external: true</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>c1908cdb-e435-497c-a62d-812fe81db08e</uuid>
+          <name>Transmission</name>
+          <description>Transmission</description>
+          <body>---
+# https://hub.docker.com/r/linuxserver/transmission
+services:
+  transmission:
+    image: lscr.io/linuxserver/transmission:latest
+    container_name: transmission
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=America/New_York
+      - TRANSMISSION_WEB_HOME= #optional
+      - USER= #optional
+      - PASS= #optional
+      - WHITELIST= #optional
+      - PEERPORT= #optional
+      - HOST_WHITELIST= #optional
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/transmission/config:/config
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/downloads:/GeneralDownloads
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/transmission/watch:/watch
+    ports:
+      - 9092:9091
+      - 51413:51413
+      - 51413:51413/udp
+    restart: unless-stopped
+</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>9deffc18-ee9a-4905-91e3-61949a0f829d</uuid>
+          <name>pihole</name>
+          <description>pihole</description>
+          <body>services:
+  pihole:
+    container_name: pihole
+    image: pihole/pihole:latest
+    ports:
+      - "8080:80/tcp"
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "67:67/udp"
+      - "8086:8086/tcp"
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
+    env_file:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/compose/.secrets.env
+    environment:
+      TZ: 'America/New_York'
+      DNSMASQ_USER: root
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/pihole/etc-pihole:/etc/pihole
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/pihole/etc-dnsmasq.d:/etc/dnsmasq.d
+    cap_add:
+      - NET_ADMIN
+    restart: unless-stopped</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>48395d0b-5078-47c6-b47c-f794993c6019</uuid>
+          <name>prowlarr</name>
+          <description>prowlarr</description>
+          <body>---
+#https://hub.docker.com/r/linuxserver/prowlarr
+services:
+  prowlarr:
+    image: lscr.io/linuxserver/prowlarr:latest
+    container_name: prowlarr
+    networks:
+      - media-net
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=America/New_York
+    dns:
+      - 192.168.1.154      
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/prowlarr:/config
+    ports:
+      - 9696:9696
+    restart: unless-stopped
+networks:
+  media-net:
+    external: true
+    </body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>76053692-880d-4e8d-8868-6b6007c18050</uuid>
+          <name>Open-webui</name>
+          <description>Open-webui</description>
+          <body>services:
+  open-webui:
+    command:
+      - "bash"
+      - "start.sh"
+    container_name: "open-webui"
+    environment:
+      - "OLLAMA_BASE_URL=http://ollama:11434"
+      - "MODEL_NAME=llama"
+      - "WEBUI_SECRET_KEY="
+      - "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      - "LANG=C.UTF-8"
+      - "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D"
+      - "PYTHON_VERSION=3.11.10"
+      - "PYTHON_SHA256=07a4356e912900e61a15cb0949a06c4a05012e213ecd6b4e84d0f67aabbee372"
+      - "ENV=prod"
+      - "PORT=8080"
+      - "USE_OLLAMA_DOCKER=false"
+      - "USE_CUDA_DOCKER=false"
+      - "USE_CUDA_DOCKER_VER=cu121"
+      - "USE_EMBEDDING_MODEL_DOCKER=sentence-transformers/all-MiniLM-L6-v2"
+      - "USE_RERANKING_MODEL_DOCKER="
+      - "OPENAI_API_BASE_URL="
+      - "OPENAI_API_KEY="
+      - "SCARF_NO_ANALYTICS=true"
+      - "DO_NOT_TRACK=true"
+      - "ANONYMIZED_TELEMETRY=false"
+      - "WHISPER_MODEL=base"
+      - "WHISPER_MODEL_DIR=/app/backend/data/cache/whisper/models"
+      - "RAG_EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2"
+      - "RAG_RERANKING_MODEL="
+      - "SENTENCE_TRANSFORMERS_HOME=/app/backend/data/cache/embedding/models"
+      - "TIKTOKEN_ENCODING_NAME=cl100k_base"
+      - "TIKTOKEN_CACHE_DIR=/app/backend/data/cache/tiktoken"
+      - "HF_HOME=/app/backend/data/cache/embedding/models"
+      - "HOME=/root"
+      - "WEBUI_BUILD_VERSION=96c865404d36637eafadb6d2dd2365c85d452648"
+      - "DOCKER=true"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    hostname: "b3343e912475"
+    image: "ghcr.io/open-webui/open-webui:main"
+    ipc: "private"
+    labels:
+      com.docker.compose.config-hash: "ad26aaba70785e9ac3aead13f3f3f43d7bd1396fe4002e576ce4f37804e1c14d"
+      com.docker.compose.container-number: "1"
+      com.docker.compose.depends_on: "ollama:service_started:false"
+      com.docker.compose.image: "sha256:c679b003c176ddbae5dd1b16aee3c63bea88d6f52d98befc576f4257c566be54"
+      com.docker.compose.oneoff: "False"
+      com.docker.compose.project: "open-webui"
+      com.docker.compose.project.config_files: "/srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/compose/open-webui/docker-compose.yaml"
+      com.docker.compose.project.working_dir: "/srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/compose/open-webui"
+      com.docker.compose.service: "open-webui"
+      com.docker.compose.version: "2.29.7"
+      org.opencontainers.image.created: "2024-11-10T02:01:57.685Z"
+      org.opencontainers.image.description: "User-friendly AI Interface (Supports\
+        \ Ollama, OpenAI API, ...)"
+      org.opencontainers.image.licenses: "MIT"
+      org.opencontainers.image.revision: "96c865404d36637eafadb6d2dd2365c85d452648"
+      org.opencontainers.image.source: "https://github.com/open-webui/open-webui"
+      org.opencontainers.image.title: "open-webui"
+      org.opencontainers.image.url: "https://github.com/open-webui/open-webui"
+      org.opencontainers.image.version: "main"
+    logging:
+      driver: "json-file"
+      options: {}
+    networks:
+      - "open-webui_default"
+    dns:
+      - 192.168.1.154
+    ports:
+      - "3000:8080/tcp"
+    restart: "unless-stopped"
+    user: "0:0"
+    volumes:
+      - "/srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/open-webui/data:/app/backend/data"
+    working_dir: "/app/backend"
+networks:
+  open-webui_default:
+    external: true
+    name: "open-webui_default"</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>f6d4ae51-2f2c-40e3-beb3-0d22a6c7e647</uuid>
+          <name>ollama</name>
+          <description>ollama</description>
+          <body>services:
+  ollama:
+    command:
+      - "serve"
+    container_name: "ollama"
+    entrypoint:
+      - "/bin/ollama"
+    environment:
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      - "OLLAMA_HOST=0.0.0.0:11434"
+      - "LD_LIBRARY_PATH=/usr/local/nvidia/lib:/usr/local/nvidia/lib64"
+      - "NVIDIA_DRIVER_CAPABILITIES=compute,utility"
+      - "NVIDIA_VISIBLE_DEVICES=all"
+    ports:
+      - "11434/tcp"
+    hostname: "e12e94caacf6"
+    dns:
+      - 192.168.1.154
+    image: "ollama/ollama:latest"
+    ipc: "private"
+    labels:
+      com.docker.compose.config-hash: "75eb955bfef3162436e85f1a810ae060bacbec095db330888a2da1377357ab53"
+      com.docker.compose.container-number: "1"
+      com.docker.compose.depends_on: ""
+      com.docker.compose.image: "sha256:6970c6ac674bad6accf69e944a62555948d91019917a3fcf9cdbbe4647a21a36"
+      com.docker.compose.oneoff: "False"
+      com.docker.compose.project: "open-webui"
+      com.docker.compose.project.config_files: "/srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/compose/open-webui/docker-compose.yaml"
+      com.docker.compose.project.working_dir: "/srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/compose/open-webui"
+      com.docker.compose.service: "ollama"
+      com.docker.compose.version: "2.29.7"
+      org.opencontainers.image.ref.name: "ubuntu"
+      org.opencontainers.image.version: "22.04"
+    logging:
+      driver: "json-file"
+      options: {}
+    networks:
+      - "open-webui_default"
+    restart: "unless-stopped"
+    tty: true
+    volumes:
+      - "/srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/ollama:/root/.ollama"
+networks:
+  open-webui_default:
+    external: true
+    name: "open-webui_default"</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>7c39cf8f-5c61-4d27-a41d-44d46cddbd2d</uuid>
+          <name>syncthing</name>
+          <description></description>
+          <body>---
+# https://hub.docker.com/r/linuxserver/syncthing
+services:
+  syncthing:
+    image: lscr.io/linuxserver/syncthing:latest
+    container_name: syncthing
+    hostname: syncthing #optional
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=America/New_York
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/syncthing/config:/config
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/:/toplevel
+    #  - CHANGE_TO_COMPOSE_DATA_PATH/syncthing/data2:/data2
+    ports:
+      - 8384:8384
+      - 22000:22000/tcp
+      - 22000:22000/udp
+      - 21027:21027/udp
+    dns:
+      - 192.168.1.154
+    restart: unless-stopped
+</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>75a7e63a-ddac-4d5d-94ee-d5cb856935bb</uuid>
+          <name>tailscale</name>
+          <description></description>
+          <body>---
+# https://hub.docker.com/r/tailscale/tailscale
+services:
+  tailscale:
+    privileged: true
+    hostname: omv # This will become the tailscale device name
+    network_mode: "host"
+    container_name: omv-server
+    image: tailscale/tailscale:latest
+    volumes:
+      - "/srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/tailscale/var_lib:/var/lib/tailscale" # State data will be stored in this directory
+      - "/dev/net/tun:/dev/net/tun" # Required for tailscale to work
+    cap_add: # Required for tailscale to work
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      - TS_AUTHKEY=tskey-auth-kWvWbJpfC121CNTRL-DaroV6fRD1CdZZ2vfBca1C5MuFmZxcVa
+      - TS_STATE_DIR=/var/lib/tailscale
+      - TS_USERSPACE=false
+    restart: unless-stopped
+</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>3a615b6a-c421-4657-be88-90636cba2f49</uuid>
+          <name>stirling pdf</name>
+          <description>stirling pdf</description>
+          <body>services:
+  stirling-pdf:
+    image: frooodle/s-pdf:latest
+    ports:
+      - '8090:8080'
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/stirling-pdf/trainingData:/usr/share/tesseract-ocr/4.00/tessdata #Required for extra OCR languages
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/stirling-pdf/extraConfigs:/configs
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/stirling-pdf/customFiles:/customFiles/
+    restart: always
+# get extra OCR languages here:
+# https://github.com/tesseract-ocr/tessdata_fast
+# Copy link of your desired language(s), use wget to download to folder /stirling-pdf/trainingData
+# or download language file and copy it to /stirling-pdf/trainingData 
+</body>
+          <showenv>0</showenv>
+          <env>DOCKER_ENABLE_SECURITY=false</env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>18948504-b187-4ce8-86d2-c5550bd61819</uuid>
+          <name>Duplicati</name>
+          <description></description>
+          <body>services:
+  duplicati:
+    image: lscr.io/linuxserver/duplicati
+    container_name: duplicati
+    env_file:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/compose/.secrets.env
+    environment:
+      - PUID=0
+      - PGID=0
+      - TZ=America/New_York
+      - DUPLICATI__WEBSERVICE_PASSWORD=
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata:/source/appdata
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/compose:/source/compose
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/database:/source/database
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/certs:/source/certs
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/backup_compose/duplicati/compose:/backups_compose
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/backup_compose/duplicati/appdata:/backups_appdata
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/duplicati:/config
+    dns:
+      - 192.168.1.154
+    ports:
+      - 8200:8200
+    restart: unless-stopped</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>21bc77fc-fdff-4cd5-b43b-f3c0c3442eb9</uuid>
+          <name>homepage</name>
+          <description>homepage</description>
+          <body>services:
+
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    dns:
+      - 192.168.1.154
+    ports:
+      - 3001:3000
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/homepage:/app/config
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3:/srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3
+    user: "1000:990"  # Replace 101 with your actual docker GID
+    environment:
+    #  - PUID=1000
+    # - PGID=990     # Must match your docker group ID
+      - TZ=America/New_York
+      - HOMEPAGE_ALLOWED_HOSTS=*
+      - HOMEPAGE_CONFIG_LOCK=false
+      - HOMEPAGE_LOG_LEVEL=debug
+    restart: unless-stopped
+</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>3124aa97-688d-44f7-baa1-7d4921ead12e</uuid>
+          <name>nginx-proxy-manager</name>
+          <description>nginx-proxy-manager</description>
+          <body>services:
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '443:443'
+      - '81:81'
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/nginxproxymanager/data:/data
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/nginxproxymanager/letsencrypt:/etc/letsencrypt
+    environment:
+      - TZ=America/New_York
+    depends_on:
+      - db
+    dns:
+      - 1.1.1.1
+    networks:
+      - authelia_net
+
+  db:
+    image: 'jc21/mariadb-aria:latest'
+    restart: unless-stopped
+    volumes:
+      - //srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/nginxproxymanager/mysql:/var/lib/mysql
+
+networks:
+  authelia_net:
+    external: true
+####
+#
+#     Default Administrator User login:
+#     Email:    admin@example.com
+#     Password: changeme
+#
+####
+</body>
+          <showenv>0</showenv>
+          <env>###
+# Nginx Proxy Manager variables
+###
+TZ=Europe/Berlin
+####
+#
+# Mysql/Maria connection parameters:
+# If you run a DB-Server already, you should know how to connect to your server
+#
+####
+DB_MYSQL_HOST: "db"
+DB_MYSQL_PORT: 3306
+DB_MYSQL_USER: "npm"
+DB_MYSQL_PASSWORD: "npm"
+DB_MYSQL_NAME: "npm"
+# Uncomment this if IPv6 is not enabled on your host
+# DISABLE_IPV6: 'true'
+####
+#
+# Mysql/Maria DB setup variables.
+# Not needed if you run a DB-Server already, you should know, how to setup a new database
+#
+####
+MYSQL_ROOT_PASSWORD: 'npm'
+MYSQL_DATABASE: 'npm'
+MYSQL_USER: 'npm'
+MYSQL_PASSWORD: 'npm'</env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>a796f426-8507-4fac-b211-0f4ef86ecfb3</uuid>
+          <name>Speedtest</name>
+          <description>Speedtest</description>
+          <body>services:
+  speedtest-tracker:
+    image: lscr.io/linuxserver/speedtest-tracker:latest
+    restart: unless-stopped
+    container_name: speedtest-tracker
+    dns:
+      - 192.168.1.154
+    ports:
+      - 7070:80
+    env_file:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/compose/.secrets.env
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=America/New_York
+      - DB_CONNECTION=sqlite
+      - SPEEDTEST_SERVER_ID=28307
+      - SPEEDTEST_SCHEDULE=0 */12 * * *
+      - MAIL_MAILER=smtp
+      - MAIL_HOST=mail.heyzeus.org
+      - MAIL_PORT=465
+      - MAIL_USERNAME=omv-server@heyzeus.org
+      - MAIL_ENCRYPTION=tls
+      - MAIL_FROM_ADDRESS=omv-server@heyzeus.org
+      - MAIL_FROM_NAME="Speedtest Tracker"
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/speedtest:/config</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>584ab65c-fb57-455d-bd0b-b900050ee2da</uuid>
+          <name>authelia</name>
+          <description>authelia</description>
+          <body>services:
+  authelia:
+    container_name: authelia
+    image: docker.io/authelia/authelia:latest
+    restart: unless-stopped
+    #environment:
+     # AUTHELIA_IDENTITY_VALIDATION_RESET_PASSWORD_JWT_SECRET_FILE: '/secrets/JWT_SECRET'
+     # AUTHELIA_SESSION_SECRET_FILE: '/secrets/SESSION_SECRET'
+     # AUTHELIA_STORAGE_POSTGRES_PASSWORD_FILE: '/secrets/STORAGE_PASSWORD'
+     # AUTHELIA_STORAGE_ENCRYPTION_KEY_FILE: '/secrets/STORAGE_ENCRYPTION_KEY'
+    ports:
+      - 9091:9091
+    dns:
+      - 192.168.1.154
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/authelia/config:/config/
+     # - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/authelia/secrets:/secrets/
+    environment:
+      - TZ=America/New_York
+    networks:
+      - authelia_net
+      #net:
+       # aliases: [authelia_net]
+networks:
+   authelia_net:
+    external: true
+  # net:
+  #   external: true
+  #   name: 'authelia_net'</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>888dcb1d-918d-46f2-a775-a499b5cc9633</uuid>
+          <name>calibre-web</name>
+          <description>calibre-web</description>
+          <body>---
+networks:
+  my-net:
+    external: true
+  internal-net:
+    driver: bridge
+services:
+  calibre-web:
+    image: lscr.io/linuxserver/calibre-web:latest
+    container_name: calibre-web
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=America/New_York
+      - DOCKER_MODS=ghcr.io/linuxserver/mods:universal-calibre #optional
+      # - OAUTHLIB_RELAX_TOKEN_SCOPE=1 #optional
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/calibre-web:/config
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/media/lazylibrarian/books:/books
+    dns:
+      - 192.168.1.154    
+    ports:
+      - 8083:8083
+    restart: unless-stopped
+</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>fc69ae9e-cd1c-4f1d-a492-6b48d134a382</uuid>
+          <name>lazylibrarian</name>
+          <description>lazylibrarian</description>
+          <body>---
+services:
+  lazylibrarian:
+    image: lscr.io/linuxserver/lazylibrarian:latest
+    container_name: lazylibrarian
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=America/New_York
+      - DOCKER_MODS=linuxserver/mods:universal-calibre|linuxserver/mods:lazylibrarian-ffmpeg #optional
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/lazylibrarian/data:/config
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/downloads/:/downloads
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/media/lazylibrarian/books:/books #optional
+    dns:
+      - 8.8.8.8  
+    ports:
+      - 5299:5299
+    restart: unless-stopped
+</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>86cf32a3-6f94-4527-bcb7-d878dd8444e0</uuid>
+          <name>calibre</name>
+          <description>calibre</description>
+          <body>services:
+  calibre:
+    image: lscr.io/linuxserver/calibre:latest
+    container_name: calibre
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=America/New_York
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/calibre:/config
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/media/lazylibrarian/books:/books  
+    dns:
+      - 192.168.1.154
+    ports:
+      #- 8080:8080     # Calibre Content Server (optional)
+      - 8081:8081     # noVNC Web GUI for Calibre desktop
+    restart: unless-stopped
+</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>84cbb5ff-b149-430e-9bfe-aa485185990b</uuid>
+          <name>Wallos</name>
+          <description>wallos</description>
+          <body>services:
+  wallos:
+    container_name: wallos
+    image: bellamy/wallos:latest
+    ports:
+      - "8282:80/tcp"
+    environment:
+      TZ: 'America/New_York'
+    networks:
+      - media-net
+    dns:
+      - 192.168.1.154
+    # Volumes store your data between container upgrades
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/wallos/db:/var/www/html/db
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/wallos/logos:/var/www/html/images/uploads/logos
+    restart: unless-stopped
+networks:
+  media-net:
+    external: true</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>d437b8e5-ac8d-418d-882a-a6a6d6a4beee</uuid>
+          <name>beszel</name>
+          <description>beszel</description>
+          <body>---
+services:
+  beszel:
+    image: henrygd/beszel
+    container_name: beszel
+    environment:
+      - TZ=America/New_York
+    ports:
+      - 8091:8090
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/beszel/config:/beszel_data
+    dns:
+      - 192.168.1.154
+    restart: unless-stopped</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>04dcc183-d3ce-4e18-b181-33d429a4965f</uuid>
+          <name>beszel-agent</name>
+          <description>beszel-agent</description>
+          <body>services:
+  beszel-agent:
+    image: "henrygd/beszel-agent"
+    container_name: "beszel-agent"
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      # monitor other disks / partitions by mounting a folder in /extra-filesystems
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/:/extra-filesystems/srv:ro
+    environment:
+      LISTEN: 45876
+      KEY: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILHJgGJpH4Z0l0M/VpsLPyZACHTduG2WeuXRuSYQWYGJ"</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>ba5e1228-1438-4448-8ff4-186522954b1a</uuid>
+          <name>nzbget</name>
+          <description>nzbget</description>
+          <body>---
+services:
+  nzbget:
+    image: lscr.io/linuxserver/nzbget:latest
+    container_name: nzbget
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=America/New_York
+      - NZBGET_CONTROL_USERNAME=
+      - NZBGET_CONTROL_PASSWORD=
+    dns:
+      - 192.168.1.154 
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/nzbget/config:/config
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/downloads:/GeneralDownloads
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/media/sabnzbd/incomplete:/incomplete-download 
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/media/plex/multimedia/movies:/Plexmovies #optional
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/media/plex/multimedia/tvshows:/Plextvshows #optional
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/media/lazylibrarian/books:/books #optional
+    ports:
+      - 6789:6789
+    restart: unless-stopped</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>b37f95f5-89c4-4ba3-a2cf-e6a39ffc10b8</uuid>
+          <name>glances</name>
+          <description>glances</description>
+          <body>services:
+  glances:
+    image: nicolargo/glances:latest-full
+    container_name: glances
+    pid: host
+    network_mode: host
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/glances/config:/glances/conf
+    dns:
+      - 192.168.1.154   
+    environment:
+      - "GLANCES_OPT=-w"
+      - TZ=America/New_York
+    restart: unless-stopped
+</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>c68b8043-77b7-4816-b99d-7ef0062a1cf7</uuid>
+          <name>litellm</name>
+          <description>litellm</description>
+          <body>services:
+  litellm:
+    image: ghcr.io/berriai/litellm:v1.83.10-nightly
+    dns:
+      - 192.168.1.154
+    restart: unless-stopped
+    depends_on:
+      - litellm-db
+    env_file:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/compose/.secrets.env
+    environment:
+      - UI_USERNAME=zeus
+      - STORE_MODEL_IN_DB=True
+    ports:
+      - "4000:4000"
+
+  litellm-db:
+    image: postgres:16-alpine
+    dns:
+      - 192.168.1.154
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U litellmdb_user -d litellm_db
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/litellm-db:/var/lib/postgresql/data:rw
+    env_file:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/compose/.secrets.env
+    restart: unless-stopped</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>5a80f6a3-7f6e-45a0-a5aa-fe1a40fd2dd2</uuid>
+          <name>z-wave-js-ui</name>
+          <description>z-wave-js-ui</description>
+          <body>services:
+  zwave-js-ui:
+    container_name: zwave-js-ui
+    image: zwavejs/zwave-js-ui:latest
+    restart: always
+    tty: true
+    stop_signal: SIGINT
+    env_file:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/compose/.secrets.env
+    environment:
+      - TZ=America/New_York
+    networks:
+      - zwave
+    devices:
+      - /dev/serial/by-id/usb-Silicon_Labs_CP2105_Dual_USB_to_UART_Bridge_Controller_01702DFE-if01-port0:/dev/ttyZWave
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/zwave-js-ui/store:/usr/src/app/store
+    ports:
+      - '8092:8091'
+      - '3002:3002'
+networks:
+  zwave:
+volumes:
+  zwave-config:
+    name: zwave-config</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>cfb4abaa-75e4-42f1-9342-50be2409d5f9</uuid>
+          <name>ESPHome</name>
+          <description>ESPHome</description>
+          <body>services:
+  esphome:
+    container_name: esphome
+    image: ghcr.io/esphome/esphome:latest
+    volumes:
+      # Map a local directory to the container's /config for persistent storage of your YAML files and firmware
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/esphome/config:/config:rw
+      # Ensure correct local time within the container
+      - /etc/localtime:/etc/localtime:ro
+    # Use host network mode for better mDNS/device discovery (recommended for Linux hosts)
+    network_mode: host
+    # Or, if 'network_mode: host' is not available (e.g., on macOS or Windows), use ports and enable ping status
+    # ports:
+    # - "6052:6052"
+    # environment:
+    #   - ESPHOME_DASHBOARD_USE_PING=true 
+    restart: always
+    # 'privileged: true' might be needed if you plan to flash devices via USB from within the container
+    # privileged: true
+</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>ad06e55d-74cd-4d73-bf5b-44da7b2fee5a</uuid>
+          <name>uptime-kuma</name>
+          <description>uptime-kuma</description>
+          <body>---
+# Date: 2025-06-01
+# https://github.com/louislam/uptime-kuma
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:2
+    container_name: uptime-kuma
+    dns:
+      - 192.168.1.154
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/uptime-kuma/config:/app/data
+    #- CHANGE_TO_COMPOSE_DATA_PATH/uptime-kuma/data:/app/data
+    ports:
+      - 3003:3001 # Host Port:Container Port
+    restart: unless-stopped
+</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>a24c083b-9a4a-4246-b20e-bb636d81e417</uuid>
+          <name>Code Server</name>
+          <description>Code server</description>
+          <body>---
+services:
+  code-server:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: code-server
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=America/New_York
+      - AUTH=none
+      #- CS_DISABLE_GETTING_STARTED_OVERRIDE=true
+      #- PASSWORD=SaveSomeDollars2# #optional
+      #- HASHED_PASSWORD= #optional
+      #- SUDO_PASSWORD=SaveSomeDollars2# #optional
+      #- SUDO_PASSWORD_HASH= #optional
+      - PROXY_DOMAIN=dev.zeusis.homes #optional
+      - DEFAULT_WORKSPACE=/appdata #optional
+      - PWA_APPNAME=code-server #optional
+    dns:
+      - 192.168.1.154
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/code-server/config:/config
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata:/appdata
+    ports:
+      - 8443:8443
+    restart: unless-stopped
+</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>2429d586-9c1c-4b0c-a108-095cda372396</uuid>
+          <name>dozzle</name>
+          <description>dozzle</description>
+          <body>---
+# Date: 2025-06-01
+# https://hub.docker.com/r/amir20/dozzle
+# https://dozzle.dev/
+services:
+  dozzle:
+    container_name: dozzle
+    image: amir20/dozzle:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      #- /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 8889:8080
+    environment:
+      - TZ=America/New_York
+    restart: unless-stopped
+</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>c2d0477d-3044-4dda-b284-0d2bcddb7a29</uuid>
+          <name>Transmute</name>
+          <description>Transmute</description>
+          <body>services:
+  transmute:
+    image: ghcr.io/transmute-app/transmute:latest
+    container_name: transmute
+    restart: unless-stopped
+    ports:
+        - 3313:3313
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/transmute_data:/app/data
+    healthcheck:
+      test:
+        - "CMD"
+        - "wget"
+        - "-q"
+        - "-O"
+        - "/dev/null"
+        - "--tries=1"
+        - "http://localhost:3313/api/health/ready"
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  transmute_data:</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>6914dcfa-d018-47ae-aa71-f61df1d5cb21</uuid>
+          <name>metube</name>
+          <description>metube</description>
+          <body>services:
+  metube:
+    image: ghcr.io/alexta69/metube
+    container_name: metube
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=America/New_York
+      #- DOWNLOAD_DIR=/downloads/video
+      #- AUDIO_DOWNLOAD_DIR=/downloads/audio
+      - STATE_DIR=/downloads/.metube
+      - TEMP_DIR=/downloads/.tmp
+      - YTDL_OPTIONS={"postprocessors":[{"key":"FFmpegExtractAudio","preferredcodec":"mp3","preferredquality":"192"}]}
+    dns:
+      - 192.168.1.154
+    ports:
+      - "8097:8081"
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/metube/downloads:/downloads</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>6b104458-755f-47a3-b43a-905a0e755422</uuid>
+          <name>filebrowser</name>
+          <description>filebrowser</description>
+          <body>services:
+  filebrowser:
+    image: filebrowser/filebrowser:latest
+    container_name: filebrowser
+    environment:
+      - PUID=1000
+      - PGID=100
+    dns:
+      - 192.168.1.154    
+    ports:
+      - "8888:80"
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/downloads:/srv/downloads
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/media:/srv/media
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/filebrowser/filebrowser.db:/database/filebrowser.db
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/filebrowser/filebrowser.json:/config/filebrowser.json
+    restart: always</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>9449dcb1-e29a-4671-a19e-f4864f01c08b</uuid>
+          <name>searxng</name>
+          <description>searxng</description>
+          <body>services:
+  searxng:
+    image: searxng/searxng:latest
+    container_name: searxng
+    ports:
+      - "8880:8080"
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/searxng:/etc/searxng
+    environment:
+      - TZ=America/New_York
+    dns:
+      - 192.168.1.154
+    restart: unless-stopped</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+        <file>
+          <uuid>e92000eb-c4f9-4efa-a268-878bbd222a57</uuid>
+          <name>invidious</name>
+          <description>invidious</description>
+          <body>services:
+  invidious:
+    image: quay.io/invidious/invidious:latest
+    container_name: invidious
+    restart: unless-stopped
+    ports:
+      - "0.0.0.0:3006:3000"
+    environment:
+      INVIDIOUS_CONFIG: |
+        db:
+          dbname: invidious
+          user: kemal
+          password: supersecretpassword
+          host: invidious-db
+          port: 5432
+        check_tables: true
+        invidious_companion:
+          - private_url: "http://companion:8282/companion"
+        invidious_companion_key: "ec3b6627bd9b59df"
+        hmac_key: "21dd65a91efe4aee"
+    depends_on:
+      - invidious-db
+      - companion
+    healthcheck:
+      test: wget -nv --tries=1 --spider http://127.0.0.1:3006/api/v1/stats || exit 1
+      interval: 30s
+      timeout: 5s
+      retries: 2
+
+  companion:
+    image: quay.io/invidious/invidious-companion:latest
+    container_name: companion
+    restart: unless-stopped
+    environment:
+      SERVER_SECRET_KEY: "ec3b6627bd9b59df"
+
+  invidious-db:
+    image: postgres:14
+    container_name: invidious-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: invidious
+      POSTGRES_USER: kemal
+      POSTGRES_PASSWORD: supersecretpassword
+    volumes:
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/invidious/postgres:/var/lib/postgresql/data
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/invidious/config/sql:/config/sql:ro
+      - /srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata/invidious/docker/init-invidious-db.sh:/docker-entrypoint-initdb.d/init-invidious-db.sh:ro</body>
+          <showenv>0</showenv>
+          <env></env>
+          <showoverride>0</showoverride>
+          <override></override>
+        </file>
+      </files>
+      <dockerfiles></dockerfiles>
+      <jobs></jobs>
+      <globalenv>
+        <enabled>1</enabled>
+        <globalenv># THE FOLLOWING VARIABLES CAN BE USED IN ANY COMPOSE FILE
+# THEIR VALUE WILL BE REPLACED BY THE VALUE ASSIGNED HERE
+# YOU CAN ADD AS MANY VARIABLES AS YOU NEED
+#
+#
+# Customize the PID and GID value of your appuser user.
+# You can see it in the OMV GUI in the USERS &gt; USERS tab
+#
+APPUSER_PUID=1000
+APPUSER_PGID=100
+#
+# Customize your time zone value.
+# You can see it in the OMV GUI in the SYSTEM &gt; DATE &amp; TIME tab
+#
+TIME_ZONE_VALUE=America/New_York
+#
+# In this file you can define how many paths you need for different compose files.
+# The following are examples corresponding to the example system in the Docker on OMV document on the omv-extras wiki.
+# Customize the values ​​according to your system configuration.
+#
+PATH_TO_APPDATA=/srv/dev-disk-by-uuid-60f74361-aa6c-4a40-9ebf-f77d344204d3/appdata
+
+# Add SearX-related variables.
+MORTY_KEY=SaveSomeDolalrs2#
+SEARX_HOSTNAME=localhost
+LETSENCRYPT_EMAIL=internal</globalenv>
+      </globalenv>
+      <configs></configs>
+    </compose>
+    <kvm>
+      <jobs></jobs>
+    </kvm>
+    <k8s>
+      <enable>0</enable>
+      <datastore>sqlite</datastore>
+      <webport>8080</webport>
+      <websecureport>8443</websecureport>
+      <dashboardport>4443</dashboardport>
+      <snapshots_sharedfolderref></snapshots_sharedfolderref>
+      <sslcertificateref></sslcertificateref>
+    </k8s>
+    <wireguard>
+      <tunnels>
+        <tunnel>
+          <uuid>d1b9a775-583e-436b-a15b-d30d2685f016</uuid>
+          <enable>1</enable>
+          <tunnelnum>1</tunnelnum>
+          <tunnelname>Tunnel1</tunnelname>
+          <nic>enp2s0</nic>
+          <endpoint>zeusis.homes</endpoint>
+          <localserver></localserver>
+          <port>51820</port>
+          <iptables>1</iptables>
+          <persistent>0</persistent>
+          <mtu>0</mtu>
+          <privatekeyserver>uOECkL91cvMNwRa7DSFcXNEuqzpIWZC/XLWoMkOcnXE=</privatekeyserver>
+          <publickeyserver>i5AWxbFi7X0i9ujwD6d5blqqB1aA8D/EayZmcbgu0FU=</publickeyserver>
+        </tunnel>
+      </tunnels>
+      <clients>
+        <client>
+          <uuid>38c5537f-49fb-4121-9ec4-330061326df2</uuid>
+          <enable>1</enable>
+          <clientnum>1</clientnum>
+          <tunnelnum>1</tunnelnum>
+          <clientname>zeus iphone</clientname>
+          <qr>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/wcAAgEBAYXMlpUAAAAASUVORK5CYII=</qr>
+          <restrict>0</restrict>
+          <vpn>0</vpn>
+          <localip>0</localip>
+          <persistent>0</persistent>
+          <privatekeyclient>wC8dVG04iLdNViGwDx6ZZT1Xt4VQRXKMxgoYFZctpGM=</privatekeyclient>
+          <publickeyclient>0bDobpP7jO/+wKL7uIxLb3ULdR1rlKJ4kpY194GGpAY=</publickeyclient>
+          <presharedkeyclient>GK9JqujHifFz5jceScLmmoI6oU4NsK8KcFRn6TWvV6Q=</presharedkeyclient>
+          <dns></dns>
+          <subnets></subnets>
+        </client>
+      </clients>
+      <customs></customs>
+    </wireguard>
+    <cterm>
+      <enable>1</enable>
+      <host>0.0.0.0</host>
+      <port>5000</port>
+      <hostshell>1</hostshell>
+      <autosecret></autosecret>
+      <autouser></autouser>
+      <basepath></basepath>
+    </cterm>
+    <clamav>
+      <enable>1</enable>
+      <quarantine>
+        <sharedfolderref>643c4e26-f3b5-4c40-8b9e-a1af42473a1c</sharedfolderref>
+      </quarantine>
+      <clamd>
+        <logclean>0</logclean>
+        <scanpe>1</scanpe>
+        <scanole2>1</scanole2>
+        <scanhtml>1</scanhtml>
+        <scanpdf>1</scanpdf>
+        <scanelf>1</scanelf>
+        <scanarchive>1</scanarchive>
+        <detectbrokenexecutables>0</detectbrokenexecutables>
+        <alertbrokenmedia>0</alertbrokenmedia>
+        <algorithmicdetection>1</algorithmicdetection>
+        <followdirectorysymlinks>0</followdirectorysymlinks>
+        <followfilesymlinks>0</followfilesymlinks>
+        <detectpua>0</detectpua>
+        <extraoptions></extraoptions>
+      </clamd>
+      <freshclam>
+        <enable>1</enable>
+        <checks>24</checks>
+      </freshclam>
+      <onaccesspaths></onaccesspaths>
+      <jobs>
+        <job>
+          <uuid>bdf3fd96-d8da-43e7-a5f7-eab8b8230def</uuid>
+          <enable>1</enable>
+          <sharedfolderref>d57773ca-5c70-46db-9a4e-373b1afd0d30</sharedfolderref>
+          <minute>0</minute>
+          <everynminute>0</everynminute>
+          <hour>0</hour>
+          <everynhour>0</everynhour>
+          <month>*</month>
+          <dayofmonth>*</dayofmonth>
+          <everyndayofmonth>0</everyndayofmonth>
+          <dayofweek>*</dayofweek>
+          <sendemail>1</sendemail>
+          <onaccess>0</onaccess>
+          <virusaction>quarantine</virusaction>
+          <verbose>0</verbose>
+          <multiscan>1</multiscan>
+          <comment></comment>
+        </job>
+        <job>
+          <uuid>c72af4ec-5e3a-45d6-94fc-0182c7273e3d</uuid>
+          <enable>1</enable>
+          <sharedfolderref>62da1408-2b29-4e0e-a3dc-1e4ed436eb01</sharedfolderref>
+          <minute>0</minute>
+          <everynminute>0</everynminute>
+          <hour>3</hour>
+          <everynhour>0</everynhour>
+          <month>*</month>
+          <dayofmonth>*</dayofmonth>
+          <everyndayofmonth>0</everyndayofmonth>
+          <dayofweek>*</dayofweek>
+          <sendemail>1</sendemail>
+          <onaccess>0</onaccess>
+          <virusaction>quarantine</virusaction>
+          <verbose>0</verbose>
+          <multiscan>1</multiscan>
+          <comment></comment>
+        </job>
+      </jobs>
+    </clamav>
+    <fail2ban>
+      <enable>1</enable>
+      <ignoreip>127.0.0.1, 192.168.1.0/24, 192.168.16.0/24, 100.64.0.0/10</ignoreip>
+      <findtime>604800</findtime>
+      <bantime>604800</bantime>
+      <maxretry>5</maxretry>
+      <destemail>omv-server@heyzeus.org</destemail>
+      <action>action_mwl</action>
+      <jails>
+        <jail>
+          <uuid>36b96e6c-9187-4b93-b0c6-05c6d3e29dc3</uuid>
+          <enable>1</enable>
+          <name>ssh</name>
+          <port>ssh</port>
+          <maxretry>3</maxretry>
+          <bantime>-1</bantime>
+          <filter>sshd</filter>
+          <logpath></logpath>
+        </jail>
+        <jail>
+          <uuid>59650e01-5e07-4076-9b15-ce352f4b4356</uuid>
+          <enable>1</enable>
+          <name>sshd-ddos</name>
+          <port>ssh</port>
+          <maxretry>3</maxretry>
+          <bantime>-1</bantime>
+          <filter>sshd</filter>
+          <logpath></logpath>
+        </jail>
+        <jail>
+          <uuid>6e3a7d25-326c-4dc8-bc05-63f303a62b21</uuid>
+          <enable>0</enable>
+          <name>proftp</name>
+          <port>ftp,ftp-data,ftps,ftps-data</port>
+          <maxretry>3</maxretry>
+          <bantime>-1</bantime>
+          <filter>proftpd</filter>
+          <logpath>/var/log/proftpd/proftpd.log</logpath>
+        </jail>
+        <jail>
+          <uuid>7e9a7d35-326c-4dc8-bc05-35f308a62b78</uuid>
+          <enable>0</enable>
+          <name>owncloud</name>
+          <port>http,https,8443</port>
+          <maxretry>3</maxretry>
+          <bantime>-1</bantime>
+          <filter>owncloud</filter>
+          <logpath>/MyPath/owncloud.log</logpath>
+        </jail>
+        <jail>
+          <uuid>4e3a2d25-326c-4dc8-bc05-22f303a62b75</uuid>
+          <enable>1</enable>
+          <name>nginx-404</name>
+          <port>http,https</port>
+          <maxretry>3</maxretry>
+          <bantime>-1</bantime>
+          <filter>nginx-404</filter>
+          <logpath>/var/log/nginx*/*access*.log</logpath>
+        </jail>
+        <jail>
+          <uuid>5f2b2d25-726c-5dc8-ac05-79f303a62b35</uuid>
+          <enable>1</enable>
+          <name>omv-webgui</name>
+          <port>http,https</port>
+          <maxretry>3</maxretry>
+          <bantime>-1</bantime>
+          <filter>omv-webgui</filter>
+          <logpath>/var/log/nginx/access.log</logpath>
+        </jail>
+      </jails>
+    </fail2ban>
+    <nut>
+      <enable>1</enable>
+      <mode>netclient</mode>
+      <upsname>ups</upsname>
+      <comment></comment>
+      <netclienthostname>192.168.1.49</netclienthostname>
+      <netclientusername>admin</netclientusername>
+      <netclientpassword>SaveSomeDollars2#</netclientpassword>
+      <powervalue>1</powervalue>
+      <driverconf>driver = usbhid-ups
+port = auto</driverconf>
+      <shutdownmode>onbatt</shutdownmode>
+      <shutdowntimer>840</shutdowntimer>
+      <remotemonitor>0</remotemonitor>
+      <remoteuser>zeus</remoteuser>
+      <remotepassword>SaveSomeDollars2#</remotepassword>
+    </nut>
+    <apttool>
+      <packages></packages>
+    </apttool>
+    <wetty>
+      <enable>1</enable>
+      <port>2222</port>
+      <sslcertificateref></sslcertificateref>
+    </wetty>
+    <scripts>
+      <sharedfolderref></sharedfolderref>
+      <scriptsowner>root</scriptsowner>
+      <scriptsgroup>root</scriptsgroup>
+      <fileperms>700</fileperms>
+      <logretentiontype>daily</logretentiontype>
+      <logretentionlength>14</logretentionlength>
+      <servicelogretentiontype>weekly</servicelogretentiontype>
+      <servicelogretentionlength>12</servicelogretentionlength>
+      <removezerobyte>false</removezerobyte>
+      <files></files>
+      <jobs></jobs>
+    </scripts>
+  </services>
+</config>

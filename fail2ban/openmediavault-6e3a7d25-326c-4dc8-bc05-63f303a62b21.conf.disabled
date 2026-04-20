@@ -1,0 +1,7 @@
+[proftp]
+enabled = no
+port = ftp,ftp-data,ftps,ftps-data
+filter = proftpd
+logpath = /var/log/proftpd/proftpd.log
+bantime = -1
+maxretry = 3

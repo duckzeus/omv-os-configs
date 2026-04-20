@@ -1,0 +1,12 @@
+# Secrets and private keys
+*.key
+*.pem
+ssh_host_*
+*.secret
+.secrets.env
+
+# Generated/temp files
+*.log
+*.pid
+*.tmp
+*.bak
