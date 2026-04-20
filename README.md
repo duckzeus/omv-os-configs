@@ -20,3 +20,15 @@ Backup of OpenMediaVault server OS configuration files.
 
 No private keys, passwords, or  are tracked.
 See  for excluded patterns.
+
+## Additional Configs (v2)
+
+- **apt/** — APT sources lists (OMV repos)
+- **chrony/** — NTP time sync config
+- **lvm/** — LVM config
+- **mdadm/** — Software RAID config
+- **smartd/** — Disk health monitoring
+- **sysctl/** — Kernel parameters (OMV tuned)
+- **docker/** — Docker daemon config
+- **libvirt/** — VM management config
+- **firewall/** — nftables and iptables rules
