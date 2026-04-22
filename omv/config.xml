@@ -339,7 +339,7 @@ NlB2T6bKGcYGqL7L
     <network>
       <dns>
         <hostname>omv-server</hostname>
-        <domainname>lan</domainname>
+        <domainname>local</domainname>
       </dns>
       <interfaces>
         <!--
@@ -2566,7 +2566,7 @@ LETSENCRYPT_EMAIL=internal</globalenv>
       <jobs>
         <job>
           <uuid>bdf3fd96-d8da-43e7-a5f7-eab8b8230def</uuid>
-          <enable>1</enable>
+          <enable>0</enable>
           <sharedfolderref>d57773ca-5c70-46db-9a4e-373b1afd0d30</sharedfolderref>
           <minute>0</minute>
           <everynminute>0</everynminute>
